@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center my-9">My <span class="text-blue-500 font-semibold">Bank</span>  Account !!!</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+        <div class="bg-yellow-500 p-9 rounded-lg">
+            <h1 class="text-3xl text-white">Deposit</h1>
+            <h2 class="text-5xl text-white"> $ <span id="Deposit-total">00</span></h2>
+            </div>
+
+        <div class="bg-blue-500 p-9 rounded-lg">
+            <h1 class="text-3xl text-white">Withdrow</h1>
+            <h2 class="text-5xl text-white"> $ <span id="Withdrow-total">00</span></h2>
+        </div>
+
+
+        <div class="bg-green-600 p-9 rounded-lg">
+            <h1 class="text-3xl text-white">balance</h1>
+            <h2 class="text-5xl text-white"> $ <span id="balance-total">00</span></h2>
+        </div>
+        </section>
+
+
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-11">
+            
+    
+            <div class="bg-red-500 p-9 rounded-lg ">
+                <h1 class="text-3xl text-white">Your Deposit</h1>
+                <input id="Deposit-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Enter Amount"><br>
+                <button id="button-tab" class="bg-yellow-800 px-6 py-2 text-white rounded-lg mt-4 font-extrabold hover:bg-yellow-300 ">Deposit</button>
+            </div>
+    
+    
+            <div class="bg-fuchsia-600 p-9 rounded-lg">
+                <h1 class="text-3xl text-white">Your Withdraw</h1>
+                <input id="Withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Enter Amount"><br>
+                <button id="button-tabe" class="bg-yellow-800 px-6 py-2 text-white rounded-lg mt-4 font-extrabold hover:bg-yellow-300 ">Withdraw</button>
+            </div>
+            </section>
+        
+    </main>
+    <script src="bank.js"></script>
+</body>
+</html>
